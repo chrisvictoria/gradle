@@ -22,7 +22,7 @@ public class NotifyPersonServiceTest {
 	public void notifyTest(){
 		Person person = new PersonTestDataBuilder().build();
 		String msg = notifyPersonService.notify(person);
-		Assert.assertNull(msg);
+		Assert.assertNotNull(msg);
 	}
 	
 	@Test
